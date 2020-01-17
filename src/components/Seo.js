@@ -7,6 +7,7 @@ class Seo extends React.Component {
         let siteDescription = this.props.siteDescription
         let siteUrl = 'http://tabsandspaces.io/'
         let siteImageUrl = '' //We'll need some kind of pre-rendered header image for Twitter & Facebook cards
+        let siteLogoUrl = '' // We'll need some kind of pre-rendered logo for Google juice
         let twitterHandle = '@tabsandspacespod' //assumption
 
         let schemaOrgJSONLD = [
@@ -18,7 +19,7 @@ class Seo extends React.Component {
                     "name": siteTitle,
                     "logo": {
                         "@type": "ImageObject",
-                        "url": "https://dotnetcore.show/content/images/2018/08/jamie-taylor-logo-podcast.svg",
+                        "url": {siteLogoUrl},
                         "width": 60,
                         "height": 60
                     }
