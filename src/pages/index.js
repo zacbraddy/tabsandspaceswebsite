@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import Layout from '../components/layout'
+import Seo from '../components/Seo'
 import Subscribe from '../components/Subscribe'
 import EpisodeList from '../components/EpisodeList'
 import MailingList from '../components/MailingList'
@@ -10,10 +11,11 @@ import MailingList from '../components/MailingList'
 class Homepage extends React.Component {
   render() {
     const siteTitle = 'tabs AND spaces'
+    let siteDescription = 'A straight shooting podcast that talks about software development topics that developers care about'
 
     return (
       <Layout>
-        <Helmet title={siteTitle} />
+        <Seo siteTitle={siteTitle} siteDescription={siteDescription} />
 
         {/*<section id="one" className="main style1">
           <div className="grid-wrapper">
@@ -67,8 +69,7 @@ class Homepage extends React.Component {
             <div className="col-6">
               <header className="major">
                 <h2>
-                  A straight shooting podcast that talks about software
-                  development topics that developers care about
+                  {siteDescription}
                 </h2>
               </header>
               <p>
