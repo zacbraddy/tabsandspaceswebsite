@@ -317,7 +317,7 @@
 	}
 
 	input[type="checkbox"],
-	input[type="radio"], {
+	input[type="radio"] {
 		@include vendor('appearance', 'none');
 		display: block;
 		float: left;
@@ -1050,6 +1050,17 @@
 		}
 	}
 
+	#subscribe {
+		ul.major-icons li a {
+			border-bottom-color: rgba(255, 255, 255, 0);
+			span {
+				cursor: pointer;
+				text-decoration:none;
+				outline: 0;
+			}
+		}
+	}
+
 /* XLarge */
 
 	@include breakpoint(xlarge) {
@@ -1174,9 +1185,9 @@
 				text-align: center;
 			}
 
-		/* Two */
+		/* show-description */
 
-			#two {
+			#show-description {
 				text-align: center;
 			}
 
