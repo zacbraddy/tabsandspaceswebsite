@@ -72,7 +72,7 @@ class Homepage extends React.Component {
                 </h2>
               </header>
               <p>
-                tabs AND spaces is a podcast put together by three developers
+                {siteTitle} is a podcast put together by three developers
                 with over 30 years of collective experience in software
                 development. We're here to tell you what we really think about
                 the difficult problems that face software developers throughout
@@ -82,9 +82,10 @@ class Homepage extends React.Component {
           </div>
         </section>
 
-        <EpisodeList />
+        { /* Commented out as they reveal some stuff about the show */}
+        {/* <EpisodeList /> */}
 
-        <Subscribe />
+        {/* <Subscribe /> */}
         <MailingList />
       </Layout>
     )
