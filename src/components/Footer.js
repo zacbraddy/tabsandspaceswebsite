@@ -2,6 +2,7 @@ import React from 'react'
 
 class Footer extends React.Component {
     render() {
+        let now = new Date().getFullYear()
         return (
             <section id="footer">
                 <ul className="icons">
@@ -12,7 +13,7 @@ class Footer extends React.Component {
                     <li><a href="#" className="icon alt fa-envelope"><span className="label">Email</span></a></li>
                 </ul>
                 <ul className="copyright">
-                    <li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                    <li>tabs AND spaces &copy; {now} </li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
                 </ul>
             </section>
         )
