@@ -934,9 +934,8 @@
 
 	#header {
 		@include padding(9em, 0, (0,0,_size(element-margin),0));
-		@include dark(#4686a0);
+		@include dark(#222);
 		background-attachment:	fixed,							fixed,							fixed;
-		background-image:		url('../images/overlay2.png'),		url('../images/overlay3.svg'),		linear-gradient(45deg, _palette(accent1-alt) 5%, _palette(accent3-alt) 30%, _palette(accent6-alt));
 		background-position:	top left,						center center,					center center;
 		background-size:		auto,							cover,							cover;
 		overflow: hidden;
@@ -1002,6 +1001,11 @@
 				opacity: 0;
 
 				.actions {
+					@include vendor('transform', 'translateY(30em)');
+					opacity: 0;
+				}
+                
+				.logo {
 					@include vendor('transform', 'translateY(30em)');
 					opacity: 0;
 				}
@@ -1119,6 +1123,10 @@
 				br {
 					display: inline;
 				}
+
+                .logo {
+                  width: 28em;
+                }
 			}
 
 		/* Footer */
@@ -1160,6 +1168,10 @@
 
 			#header {
 				@include padding(8em, 3em, (0,0,_size(element-margin),0));
+
+                .logo {
+                  width: 24em;
+                }
 			}
 
 		/* Footer */
@@ -1338,6 +1350,10 @@
 				br {
 					display: none;
 				}
+
+                .logo {
+                  width: 18em;
+                }
 			}
 
 		/* Footer */
@@ -1383,6 +1399,10 @@
 
 			#header {
 				@include padding(3em, 1em, (0,0,_size(element-margin),0));
+
+                .logo {
+                  width: 12em;
+                }
 			}
 
 		/* Footer */
