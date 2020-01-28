@@ -1,13 +1,12 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import colourLogo from '../assets/images/colour-logo.jpg'
 
 class Seo extends React.Component {
     render() {
         let siteTitle = this.props.siteTitle
         let siteDescription = this.props.siteDescription
         let siteUrl = 'http://tabsandspaces.io/'
-        let siteImageUrl = '' //We'll need some kind of pre-rendered header image for Twitter & Facebook cards
-        let siteLogoUrl = '' // We'll need some kind of pre-rendered logo for Google juice
         let twitterHandle = '@tabsandspacespod' //assumption
 
         let schemaOrgJSONLD = [
@@ -19,7 +18,7 @@ class Seo extends React.Component {
                     "name": siteTitle,
                     "logo": {
                         "@type": "ImageObject",
-                        "url": {siteLogoUrl},
+                        "url": {colourLogo},
                         "width": 60,
                         "height": 60
                     }
@@ -27,7 +26,7 @@ class Seo extends React.Component {
                 "url":siteUrl,
                 "image": {
                     "@type": "ImageObject",
-                    "url": siteImageUrl,
+                    "url": {colourLogo},
                     "width": 1200,
                     "height": 400
                 },
@@ -54,7 +53,7 @@ class Seo extends React.Component {
                 <meta property="og:title" content={siteTitle} />
                 <meta property="og:description" content={siteDescription} />
                 <meta property="og:url" content={siteUrl} />
-                <meta property="og:image" content={siteImageUrl} />
+                <meta property="og:image" content={colourLogo} />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="400" />
 
@@ -63,7 +62,7 @@ class Seo extends React.Component {
                 <meta name="twitter:title" content={siteTitle} />
                 <meta name="twitter:description" content={siteDescription} />
                 <meta name="twitter:url" content={siteUrl} />
-                <meta name="twitter:image" content={siteImageUrl} />
+                <meta name="twitter:image" content={colourLogo} />
                 <meta name="twitter:site" content={twitterHandle} />
                 <meta name="twitter:creator" content={twitterHandle} />
 
