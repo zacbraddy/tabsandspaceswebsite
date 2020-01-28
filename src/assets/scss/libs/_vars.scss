@@ -10,9 +10,10 @@
 
 // Size.
 	$size: (
-		border-radius:		4px,
+		border-radius:		25px,
 		element-height:		2.75em,
-		element-margin:		2em
+		element-margin:		2em,
+        border-width: 5px
 	);
 
 // Font.
@@ -25,20 +26,20 @@
 
 // Palette.
 	$palette: (
-		bg:					#fff,
-		fg:					#666,
-		fg-bold:			#555,
-		fg-light: 			#999,
-		border:				rgba(144,144,144,0.5),
-		border-bg:			rgba(144,144,144,0.075),
-		border2:			rgba(144,144,144,0.75),
-		border2-bg:			rgba(144,144,144,0.2),
-		accent1:			#c3e895,
+		bg:					#222,
+		fg:					#fafafa,
+		fg-bold:			#eee,
+		fg-light: 			#bfbfbf,
+		border:				rgba(237,141,50,1),
+		border-bg:			rgba(237,141,50,0.075),
+		border2:			rgba(237,141,50,0.75),
+		border2-bg:			rgba(237,141,50,0.2),
+		accent1:			#e6528c,
 		accent2:			#8addaa,
 		accent3:			#6bd4c8,
 		accent4:			#57aed3,
 		accent5:			#4a87d3,
-		accent6:			#6b88e6,
+		accent6:			#f7a018,
 		accent1-alt:		desaturate(darken(#c3e895, 15), 20),
 		accent2-alt:		desaturate(darken(#8addaa, 15), 20),
 		accent3-alt:		desaturate(darken(#6bd4c8, 15), 20),
@@ -47,7 +48,7 @@
 		accent6-alt:		desaturate(darken(#6b88e6, 15), 20),
 
 		dark: (
-			bg:				#666666,
+			bg:				#222,
 			fg-bold:		#ffffff,
 			fg:				rgba(255,255,255,0.75),
 			fg-light:		rgba(255,255,255,0.5),

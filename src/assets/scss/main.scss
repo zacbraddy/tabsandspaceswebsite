@@ -248,7 +248,7 @@
 	}
 
 	label {
-		color: _palette(fg-bold);
+		color: _palette(bg);
 		display: block;
 		font-size: 0.9em;
 		font-weight: _font(weight-bold);
@@ -277,7 +277,7 @@
 		}
 
 		&:focus {
-			border-color: _palette(accent3);
+			border-color: _palette(accent1);
 		}
 	}
 
@@ -765,15 +765,16 @@
 		@include vendor('appearance', 'none');
 		@include vendor('transition', ('background-color #{_duration(transition)} ease-in-out', 'color #{_duration(transition)} ease-in-out'));
 		background-color: transparent;
+        border: 0 solid;
 		border-radius: _size(border-radius);
-		border: 0;
-		box-shadow: inset 0 0 0 1px _palette(border);
-		color: _palette(fg-bold) !important;
+		border-width: _size(border-width);
+        border-color: _palette(border);
+		color: _palette(accent6) !important;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.9em;
 		font-weight: _font(weight-bold);
-		height: 2.75em;
+		height: 3.25em;
 		letter-spacing: 0.125em;
 		line-height: 2.75em;
 		padding: 0 2em;
@@ -919,13 +920,16 @@
 		@include padding(6em, 0);
 
 		&.style1 {
-			background: _palette(bg);
+			background: _palette(fg);
+            input {
+              color: _palette(bg);
+            }
 		}
 
 		&.style2 {
-			@include dark(#333);
+			background-color: _pallette(accent1);
+			background-image: linear-gradient(45deg, _palette(accent1), _palette(accent6));
 			background-attachment:	fixed,							fixed;
-			background-image:		url('../images/overlay1.png'),		url('../images/header.jpg');
 			background-size:		auto,							cover;
 		}
 	}
@@ -934,7 +938,6 @@
 
 	#header {
 		@include padding(9em, 0, (0,0,_size(element-margin),0));
-		@include dark(#222);
 		background-attachment:	fixed,							fixed,							fixed;
 		background-position:	top left,						center center,					center center;
 		background-size:		auto,							cover,							cover;
@@ -983,7 +986,6 @@
 
 		&:after {
 			@include vendor('transition', 'opacity 1s ease');
-			background-image: linear-gradient(45deg, _palette(accent3-alt), _palette(accent6-alt));
 			content: '';
 			height: 100%;
 			left: 0;
@@ -1023,9 +1025,9 @@
 		@include padding(6em, 0, (0,0,_size(element-margin),0));
 		@include dark(#4686a0);
 		background-attachment:	fixed,							fixed,							fixed;
-		background-image:		url('../images/overlay2.png'),		url('../images/overlay4.svg'),		linear-gradient(45deg, _palette(accent6-alt), _palette(accent3-alt) 50%, _palette(accent1-alt) 95%);
 		background-position:	top left,						center center,					center center;
 		background-size:		auto,							cover,							cover;
+			background-image: linear-gradient(45deg, _palette(accent1), _palette(accent6));
 		text-align: center;
 
 		.icons {
