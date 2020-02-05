@@ -7,6 +7,7 @@ import Subscribe from '../components/Subscribe'
 import EpisodeList from '../components/EpisodeList'
 import MailingList from '../components/MailingList'
 import ShowDescription from '../components/ShowDescription'
+import Hosts from '../components/Hosts'
 
 class Homepage extends React.Component {
   render() {
@@ -23,11 +24,14 @@ class Homepage extends React.Component {
           siteDescription={siteDescription}
         />
 
+        <EpisodeList />
+
         {/* <Subscribe /> */}
         <MailingList />
 
-        {/* Commented out as they reveal some stuff about the show */}
-        <EpisodeList />
+        {/* Commented out until we've settled on each other's content */}
+        {/* <Hosts/> */}
+
       </Layout>
     )
   }
