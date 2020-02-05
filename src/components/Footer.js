@@ -13,7 +13,9 @@ class Footer extends React.Component {
                     <li><a href="#" className="icon alt fa-envelope"><span className="label">Email</span></a></li>
                 </ul>
                 <ul className="copyright">
-                    <li>tabs AND spaces &copy; {now} </li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                    <li>tabs AND spaces &copy; {now} </li>
+                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                    <li>Show intro music: <a href="https://www.youtube.com/watch?v=n8X9_MgEdCg">Unity by The FatRat</a></li>
                 </ul>
             </section>
         )
