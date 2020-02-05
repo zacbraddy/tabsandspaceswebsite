@@ -12,7 +12,7 @@ export default () => (
         <p>Here is a list of the three latest episodes of the podcast</p>
       </div>
       {latest.map(ep => (
-        <Episode {...ep} showMore="true" />
+        <Episode {...ep} play="true" />
       ))}
     </div>
   </section>

@@ -1067,6 +1067,16 @@
 		}
 	}
 
+	#latest-episodes a {
+		border-bottom-color: rgba(255, 255, 255, 0);
+		cursor: pointer;
+
+		.play-icon {
+			max-height: 2.5rem;
+			
+		}
+	}
+
 /* XLarge */
 
 	@include breakpoint(xlarge) {
