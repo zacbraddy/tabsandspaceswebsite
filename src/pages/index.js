@@ -9,33 +9,25 @@ import MailingList from '../components/MailingList'
 import ShowDescription from '../components/ShowDescription'
 import Hosts from '../components/Hosts'
 
-class Homepage extends React.Component {
-  render() {
-    const siteTitle = 'tabs AND spaces'
-    let siteDescription =
-      'A straight shooting podcast that talks about software development topics that developers care about'
+let siteTitle = 'tabs AND spaces'
+let siteDescription = 'A straight shooting podcast that talks about software development topics that developers care about'
 
-    return (
-      <Layout>
-        <Seo siteTitle={siteTitle} siteDescription={siteDescription} />
+export default () => (
+  <Layout>
+    <Seo siteTitle={siteTitle} siteDescription={siteDescription} />
 
-        <ShowDescription
-          siteTitle={siteTitle}
-          siteDescription={siteDescription}
-        />
+    <ShowDescription
+      siteTitle={siteTitle}
+      siteDescription={siteDescription}
+    />
 
-        <MailingList />
+    <MailingList />
 
-        <EpisodeList />
-        
-        { /* Displays a bunch of ways for folks to subscribe to the show */}
-        <Subscribe />
+    <EpisodeList />
+    
+    <Subscribe />
 
-        <Hosts/>
+    <Hosts/>
 
-      </Layout>
-    )
-  }
-}
-
-export default Homepage
+  </Layout>
+)
