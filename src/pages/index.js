@@ -24,10 +24,12 @@ class Homepage extends React.Component {
           siteDescription={siteDescription}
         />
 
-        <EpisodeList />
-
-        {/* <Subscribe /> */}
         <MailingList />
+
+        <EpisodeList />
+        
+        { /* Displays a bunch of ways for folks to subscribe to the show */}
+        <Subscribe />
 
         <Hosts/>
 
