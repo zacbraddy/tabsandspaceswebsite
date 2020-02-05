@@ -29,8 +29,7 @@ class Homepage extends React.Component {
         {/* <Subscribe /> */}
         <MailingList />
 
-        {/* Commented out until we've settled on each other's content */}
-        {/* <Hosts/> */}
+        <Hosts/>
 
       </Layout>
     )
