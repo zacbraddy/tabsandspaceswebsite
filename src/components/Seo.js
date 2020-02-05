@@ -20,12 +20,7 @@ class Seo extends React.Component {
                 "publisher": {
                     "@type": "Organization",
                     "name": siteTitle,
-                    "logo": {
-                        "@type": "ImageObject",
-                        "url": {imageUrl},
-                        "width": 60,
-                        "height": 60
-                    }
+                    "logo": {imageUrl}
                 },
                 "url":siteUrl,
                 "image": {
