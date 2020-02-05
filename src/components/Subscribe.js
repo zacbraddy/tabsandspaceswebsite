@@ -1,9 +1,13 @@
 import React from 'react'
 import services from '../config/podcast-services'
 
+let rss = services.find(serv => {
+  return serv.name == 'RSS'
+}).url;
+
 let podchaser = services.find(serv => {
   return serv.name == 'PocketCasts'
-});
+}).url;
 
 export default () => (
 
@@ -12,7 +16,7 @@ export default () => (
       <div className="col-6">
         <ul className="major-icons">
           <li>
-            <a href={podchaser.url} target="_blank" rel="noopener noreferrer">
+            <a href={podchaser.length > 0 ? podchaser : rss } target="_blank" rel="noopener noreferrer">
               <span className="icon style3 major fa-podcast"></span>
             </a>
           </li>
@@ -30,10 +34,12 @@ export default () => (
         <ul>
             {
               services.map((sub) => {
+                if (sub.url.length >  0) {
                 return (
                     <li>
                         <a href={sub.url} target="_blank" rel="noopener noreferrer">{sub.name}</a>
                     </li>);
+                }
               })
             }
         </ul>
