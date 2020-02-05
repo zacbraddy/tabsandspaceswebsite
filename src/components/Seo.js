@@ -37,7 +37,7 @@ class Seo extends React.Component {
             }
         ];
 
-        let rssFeedUrl = ''
+        let rssFeedUrl = 'https://tabsandspaces.libsyn.com/rss'
 
         return (
             <Helmet>
