@@ -2,8 +2,8 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import logoUrl from '../assets/images/colour-logo.jpg'
 
-let siteTitle = this.props.siteTitle
-let siteDescription = this.props.siteDescription
+let siteTitle = 'tabs AND spaces'
+let siteDescription = 'A straight shooting podcast that talks about software development topics that developers care about'
 let siteUrl = 'http://tabsandspaces.io/'
 let twitterHandle = '@tabsandspacespod' //assumption
 
