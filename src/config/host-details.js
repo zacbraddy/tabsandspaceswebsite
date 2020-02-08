@@ -7,21 +7,22 @@ export default [
     name: 'Zac Braddy',
     image: zacHeadShot,
     altText: 'Zac Braddy',
-    description: 'Zacker the Hacker is an Aussie living in the UK',
-    url : ''
+    description: 'Zac is a lead developer and budding architect at koodoo.io',
+    url: 'https://twitter.com/@ZackerTheHacker',
   },
   {
     name: 'James Studdart',
     image: jamesHeadShot,
     altText: 'James Studdart',
     description: 'James is a developer contractor from somewhere near Wales',
-    url: ''
+    url: '',
   },
   {
     name: 'Jamie Taylor',
     image: jamieHeadShot,
     altText: 'Jamie Taylor',
-    description: 'Jamie is a weirdo. Originally from Hull, he now lives in Leeds',
-    url: ''
-  }
+    description:
+      'Jamie is a weirdo. Originally from Hull, he now lives in Leeds',
+    url: '',
+  },
 ]
