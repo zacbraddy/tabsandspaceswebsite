@@ -982,6 +982,10 @@
 				@include vendor('transform', 'translateY(0)');
 				opacity: 1;
 			}
+
+            .logo {
+              width: 38em;
+            }
 		}
 
 		&:after {
