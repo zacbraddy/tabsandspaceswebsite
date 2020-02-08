@@ -1165,6 +1165,19 @@
 
 	@include breakpoint(medium) {
 
+		/* Mailing list subscribe fix */
+		#three {
+			.container {
+				input[type="email"] {
+					text-align: center;
+				}
+				input[type="submit"] {
+					padding: 0 28px;
+					height: 46px;
+				}
+			}
+		}
+
 		/* List */
 
 			ul {
