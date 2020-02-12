@@ -39,6 +39,7 @@ let rssFeedUrl = 'https://tabsandspaces.libsyn.com/rss'
 
 export default () => (
     <Helmet>
+        <title> {siteTitle} </title>
         <meta title={siteTitle} />
 
         {/* Tells Google et al. to index the site*/}
