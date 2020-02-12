@@ -3,7 +3,7 @@ import Host from './Host'
 import hosts from '../config/host-details'
 
 export default () => (
-  <section id="hosts" className="main style3 special">
+  <section id="hosts" className="main style2">
     <div className="grid-wrapper">
       <div className="col-12">
         <header className="major">

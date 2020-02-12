@@ -9,24 +9,19 @@ import ShowDescription from '../components/ShowDescription'
 import Hosts from '../components/Hosts'
 
 let siteTitle = 'tabs AND spaces'
-let siteDescription = 'A straight shooting podcast that talks about software development topics that developers care about'
+let siteDescription =
+  'A straight shooting podcast that talks about software development topics that developers care about'
 
 export default () => (
   <Layout>
     <Seo siteTitle={siteTitle} siteDescription={siteDescription} />
 
-    <ShowDescription
-      siteTitle={siteTitle}
-      siteDescription={siteDescription}
-    />
-
-    <MailingList />
+    <ShowDescription siteTitle={siteTitle} siteDescription={siteDescription} />
 
     <EpisodeList />
-    
-    <Subscribe />
 
-    <Hosts/>
+    <Hosts />
 
+    <MailingList />
   </Layout>
 )

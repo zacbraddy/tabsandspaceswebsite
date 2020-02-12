@@ -190,7 +190,7 @@
 
 	header {
 		p {
-			color: _palette(fg-light);
+			color: _palette(fg);
 			margin: 0 0 (_size(element-margin) * 0.75) 0;
 			position: relative;
 		}
@@ -248,7 +248,7 @@
 	}
 
 	label {
-		color: _palette(bg);
+		color: _palette(fg);
 		display: block;
 		font-size: 0.9em;
 		font-weight: _font(weight-bold);
@@ -1444,10 +1444,12 @@
 			#header {
 				@include padding(3em, 1em, (0,0,_size(element-margin),0));
 
+              .inner {
                 .logo {
                   width: 12em;
                 }
-			}
+              }
+            }
 
 		/* Footer */
 
