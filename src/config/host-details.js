@@ -22,7 +22,7 @@ export default [
     image: jamieHeadShot,
     altText: 'Jamie Taylor',
     description:
-      'Jamie is a weirdo. Originally from Hull, he now lives in Leeds',
-    url: '',
+      'Jamie is a serial podcast creator and .NET Developer at RJJ Software',
+    url: 'https://about.me/thejamietaylor',
   },
 ]
