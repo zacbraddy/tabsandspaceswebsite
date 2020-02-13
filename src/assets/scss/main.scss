@@ -13,6 +13,7 @@
 */
 
 @include skel-breakpoints((
+    xxlarge: '(max-width: 1920px)',
 	xlarge: '(max-width: 1680px)',
 	large: '(max-width: 1280px)',
 	medium: '(max-width: 980px)',
@@ -179,6 +180,53 @@
 	.align-right {
 		text-align: right;
 	}
+
+/* Menu */
+    .menu-nav {
+      position: sticky;
+      display: flex;
+      flex-direction: row;
+      top: 0;
+      background: _palette(bg);
+      overflow: auto;
+      white-space: nowrap;
+      z-index: 10;
+
+      @media (max-width: 480px) {
+        display:none
+      }
+
+      &__inner {
+        display: flex;
+        margin: 0;
+        padding: 0;
+
+      }
+
+      &__item {
+        list-style-type: none;
+        padding: 0;
+        border: none;
+      }
+
+      &__link {
+        display: flex;
+        padding: 1rem;
+        color: _pallette(accent3);
+        text-decoration: none;
+        transition: background 0.3s ease-in;
+        border-bottom: none;
+
+        img {
+          height: 1.7rem
+        }
+
+        &:hover {
+          background: _palette(accent1);
+          color: _palette(fg);
+        }
+      }
+    }
 
 /* Section/Article */
 
@@ -984,7 +1032,6 @@
 			}
 
             .logo {
-              width: 38em;
             }
 		}
 
@@ -1081,6 +1128,16 @@
 		}
 	}
 
+    /* XXLarge */
+    @include breakpoint(xxlarge) {
+        #header {
+            @include padding(6em, 0, (0,0,_size(element-margin),0));
+
+            .logo {
+              width: 38em;
+            }
+        }
+    }
 /* XLarge */
 
 	@include breakpoint(xlarge) {
@@ -1095,10 +1152,6 @@
 
 			#header {
 				@include padding(6em, 0, (0,0,_size(element-margin),0));
-
-                .logo {
-                  width: 38em;
-                }
 			}
 
 	}
