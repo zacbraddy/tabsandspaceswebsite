@@ -4,14 +4,9 @@ import ep1 from '../assets/images/ep001.jpg'
 // We should totally read these from config, when in production
 export default [
   {
-    name: 'Should I learn ALL the latest tech?',
-    subtitle:
-      "Because for real....there's so much of it. In this episode we decide if you should try or if it's even possible.",
-    image: ep1,
-    altText:
-      'Photo by Marvin Meyer on Unsplash - https://unsplash.com/photos/SYTO3xs06fU',
-    imageSource:
-      'Photo by Marvin Meyer on Unsplash - https://unsplash.com/photos/SYTO3xs06fU',
-    episodeId: '12630338', // libsyn Id for an episode
+    link: '//html5-player.libsyn.com/embed/episode/id/13202597/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/333333/'
+  },
+{
+    link: '//html5-player.libsyn.com/embed/episode/id/13202597/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/333333/'
   },
 ]

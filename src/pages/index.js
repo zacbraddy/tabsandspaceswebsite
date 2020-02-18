@@ -2,7 +2,6 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import Seo from '../components/Seo'
-import Subscribe from '../components/Subscribe'
 import EpisodeList from '../components/EpisodeList'
 import MailingList from '../components/MailingList'
 import ShowDescription from '../components/ShowDescription'
