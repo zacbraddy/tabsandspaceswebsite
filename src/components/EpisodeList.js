@@ -32,14 +32,14 @@ export default () => (
       </div>
       {services.map(sub => {
         return (
-          <div className="col-4">
+          <div className="col-6 sub-icon-container">
             <a
               href={sub.url}
+              className="sub-icon"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ textDecoration: 'underline' }}
             >
-              {sub.name}
+              {sub.icon}
             </a>
           </div>
         )
