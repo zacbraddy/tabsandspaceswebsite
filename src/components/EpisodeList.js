@@ -32,7 +32,7 @@ export default () => (
       </div>
       {services.map(sub => {
         return (
-          <div className="col-6 sub-icon-container">
+          <div className="col-2 sub-icon-container">
             <a
               href={sub.url}
               className="sub-icon"
