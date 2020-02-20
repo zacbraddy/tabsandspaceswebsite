@@ -1,13 +1,40 @@
-import React from 'react'
+import React, { useState } from 'react'
+import ReactCardFlip from 'react-card-flip'
 
-export default ({ image, altText, name, subtitle, episodeId, play }) => (
-  <div className="col-4">
-    <h3>{name}</h3>
-    <a id={episodeId} className="">
-      <span className="image fit">
-        <img src={image} alt={altText} />
-      </span>
-    </a>
-    <p>{subtitle}</p>
-  </div>
-)
+export default ({ image, altText, name, subtitle, episodeId, play }) => {
+  const [isFlipped, setIsFlipped] = useState(false)
+
+  return (
+    <div className="col-4">
+      <ReactCardFlip isFlipped={isFlipped}>
+        <img
+          className="front-of-episode"
+          src={image}
+          alt={altText}
+          onClick={() => setIsFlipped(true)}
+        />
+        <div className="back-of-episode" onClick={() => setIsFlipped(false)}>
+          <div className="content">
+            <h4>{name}</h4>
+            <hr className="episode-rule" />
+            <p>{subtitle}</p>
+          </div>
+          <div className="player">
+            <iframe
+              style={{ border: 'none' }}
+              src={`//html5-player.libsyn.com/embed/episode/id/${episodeId}/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/333333/`}
+              height="90"
+              width="100%"
+              scrolling="no"
+              allowfullscreen
+              webkitallowfullscreen
+              mozallowfullscreen
+              oallowfullscreen
+              msallowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </ReactCardFlip>
+    </div>
+  )
+}
