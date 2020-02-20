@@ -9,15 +9,15 @@ export default () => {
       <div className="grid-wrapper">
         <div className="col-12">
           <header className="major">
-            <h2>Episodes</h2>
+            <h2>Latest Episodes</h2>
           </header>
-          <p>Check out our latest episode</p>
+          <p>Check out our latest episodes</p>
         </div>
         {latest.map(ep => (
           <Episode {...ep} />
         ))}
         <div className="col-12" style={{ marginTop: '3rem' }}>
-          But also don't forget to subscribe to us on your favourite podcast
+          But also don't forget to check out the rest and subscribe to us on your favourite podcast
           destination
         </div>
         {services.map(sub => {
