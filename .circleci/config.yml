@@ -21,12 +21,6 @@ jobs:
           paths:
             - ./node_modules
       - run:
-          name: generate-dot-env
-          command: cp .env.base .env
-      - run:
-          name: modify-dot-env
-          command: sed -i "s/\[GATSBY_FIREBASE_API_KEY\]/$GATSBY_FIREBASE_API_KEY/g" .env && sed -i "s/\[GATSBY_FIREBASE_AUTH_DOMAIN\]/$GATSBY_FIREBASE_AUTH_DOMAIN/g" .env && sed -i "s#\[GATSY_FIREBASE_DATABASE_URL\]#$GATSY_FIREBASE_DATABASE_URL#g" .env && sed -i "s/\[GATSBY_FIREBASE_PROJECT_ID\]/$GATSBY_FIREBASE_PROJECT_ID/g" .env && sed -i "s/\[GATSBY_FIREBASE_STORAGE_BUCKET\]/$GATSBY_FIREBASE_STORAGE_BUCKET/g" .env && sed -i "s/\[GATSBY_FIREBASE_MESSAGING_SENDER_ID\]/$GATSBY_FIREBASE_MESSAGING_SENDER_ID/g" .env && sed -i "s/\[GATSBY_FIREBASE_APP_ID\]/$GATSBY_FIREBASE_APP_ID/g" .env && sed -i "s/\[GATSBY_FIREBASE_MEASUREMENT_ID\]/$GATSBY_FIREBASE_MEASUREMENT_ID/g" .env
-      - run:
           name: Gatsby Build
           command: GATSBY_CPU_COUNT=2 npm run build
       - run:
