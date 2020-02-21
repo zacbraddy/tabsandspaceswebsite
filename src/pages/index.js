@@ -1,5 +1,7 @@
 import React from 'react'
 
+import '../config/firebase.config'
+
 import Layout from '../components/layout'
 import Seo from '../components/Seo'
 import EpisodeList from '../components/EpisodeList'

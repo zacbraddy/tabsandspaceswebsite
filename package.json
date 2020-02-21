@@ -6,7 +6,7 @@
   "dependencies": {
     "@iconify/icons-simple-icons": "^1.0.23",
     "@iconify/react": "^1.1.1",
-    "firebase": "^7.8.2",
+    "firebase": "^7.9.0",
     "gatsby": "^2.15.14",
     "gatsby-plugin-firebase": "^0.1.8",
     "gatsby-plugin-manifest": "^2.2.16",
