@@ -18,6 +18,12 @@ module.exports = {
         icon: 'src/assets/images/play-logo.svg', // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-158809546-1',
+      },
+    },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
   ],
