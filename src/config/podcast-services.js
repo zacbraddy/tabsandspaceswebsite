@@ -20,13 +20,18 @@ export default [
     icon: <i className="pf pf-a-spotify" />,
   },
   {
-    name: 'RSS',
-    url: 'https://tabsandspaces.libsyn.com/rss',
-    icon: <i className="pf pf-a-rss" />,
-  },
-  {
     name: 'Deezer',
     url: 'https://www.deezer.com/en/show/856232',
     icon: <Icon icon={deezerIcon} />,
+  },
+  {
+    name: 'PocketCasts',
+    url: 'https://pca.st/725d9x23',
+    icon: <i className="pf pf-a-pocket-casts" />,
+  },
+  {
+    name: 'RSS',
+    url: 'https://tabsandspaces.libsyn.com/rss',
+    icon: <i className="pf pf-a-rss" />,
   },
 ]
