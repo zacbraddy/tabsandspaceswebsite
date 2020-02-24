@@ -5,8 +5,7 @@ import deezerIcon from '@iconify/icons-simple-icons/deezer'
 export default [
   {
     name: 'Apple Podcasts',
-
-    url: '', //https://podcasts.apple.com/podcast/the-net-core-podcast/id1433496275
+    url: 'https://podcasts.apple.com/us/podcast/id1499561404',
     icon: <i className="pf pf-a-apple-podcasts" />,
   },
   {
