@@ -14,8 +14,7 @@ export default () => (
         >
           <div id="mc_embed_signup_scroll">
             <label htmlFor="mce-EMAIL">
-              Want to here when episodes are going to be launching? Sign up to
-              our mailing list
+              Sign up to our newsletter, don't worry, we'll never email you.....ever
             </label>
             <input
               type="email"
