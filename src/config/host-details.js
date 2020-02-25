@@ -14,8 +14,8 @@ export default [
     name: 'James Studdart',
     image: jamesHeadShot,
     altText: 'James Studdart',
-    description: 'James is a developer contractor from somewhere near Wales',
-    url: '',
+    description: 'James Studdart is a contract .NET developer, solutions architect and team leader based in the UK.',
+    url: 'https://cynicaldeveloper.com',
   },
   {
     name: 'Jamie Taylor',
