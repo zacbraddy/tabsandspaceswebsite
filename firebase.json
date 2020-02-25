@@ -11,6 +11,16 @@
         "source": "**",
         "destination": "/index.html"
       }
-    ]
+    ],
+    redirects: [{
+      "source": "/atm-live-slides",
+      "destination": "https://slides.com/zacbraddy/allthemicroservicesmistakes/live",
+      "type": 301
+    },
+    {
+      "source": "/atm-questions",
+      "destination": "https://app.sli.do/event/pmcs7eif",
+      "type": 301
+    }]
   }
 }
