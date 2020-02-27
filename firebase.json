@@ -11,7 +11,7 @@
       "headers": [
         {
           "key":"Content-Security-Policy-Report-Only",
-          "value":"default-src 'none'; worker-src 'none'; font-src 'self' https://*.gstatic.com https://*.podfonts.com https://*.googleapis.com; frame-src https://*.libsyn.com; style-src 'self' blob: 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';"
+          "value":"default-src 'self' https://tabsandspaces.io; connect-src 'self' https://*.googleapis.com https://*.google-analytics.com https://*.podfonts.com https://*.gstatic.com; worker-src 'self' https://tabsandspaces.io; font-src 'self' data: https://*.gstatic.com https://*.podfonts.com https://*.googleapis.com; frame-src https://*.libsyn.com; style-src 'self' blob: https://*.podfonts.com https://*.googleapis.com 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' 'sha256-MtxTLcyxVEJFNLEIqbVTaqR4WWr0+lYSZ78AzGmNsuA=' 'sha256-LoSV/eO79zdTaQiBHoxSemK7YIw/zVPIGDsbpCcCD0o='; script-src 'self' 'sha256-aTEqOfuWzJyvuhhXN1/lt3hgXAovALZTLY327vs8upg=' 'sha256-KWO6UOhc/cfhZd4gtXYPu4WkSRPuCQDtCkF/v9OyJB8=' 'sha256-4l1SGUDtxRfk+A4o0nWdUWFoIgxd1ShQ/4W34rLW47s='; manifest-src 'self'; script-src-elem 'self' https://*.google-analytics.com;"
         }
       ]
     }],
