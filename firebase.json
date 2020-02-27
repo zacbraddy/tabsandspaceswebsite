@@ -6,6 +6,15 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "headers": [{
+      "source":"**",
+      "headers": [
+        {
+          "key":"Content-Security-Policy-Report-Only",
+          "value":"default-src 'none'; worker-src 'none'; font-src 'self' https://*.gstatic.com https://*.podfonts.com https://*.googleapis.com; frame-src https://*.libsyn.com; style-src 'self' blob: 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';"
+        }
+      ]
+    }],
     "rewrites": [
       {
         "source": "**",
