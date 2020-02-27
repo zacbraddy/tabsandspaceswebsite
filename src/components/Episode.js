@@ -26,11 +26,11 @@ export default ({ image, altText, name, subtitle, episodeId, play }) => {
               height="90"
               width="100%"
               scrolling="no"
-              allowfullscreen
-              webkitallowfullscreen
-              mozallowfullscreen
-              oallowfullscreen
-              msallowfullscreen
+              allowFullScreen
+              webkitallowfullscreen="true"
+              mozallowfullscreen="true"
+              oallowfullscreen="true"
+              msallowfullscreen="true"
             ></iframe>
           </div>
         </div>
