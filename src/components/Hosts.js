@@ -11,8 +11,8 @@ export default () => (
           <p>Meet the hosts here. We're a welcoming, if opinionated, bunch</p>
         </header>
       </div>
-      {hosts.map(host => (
-        <Host {...host} />
+      {hosts.map((host, idx) => (
+        <Host key={idx} {...host} />
       ))}
     </div>
   </section>
