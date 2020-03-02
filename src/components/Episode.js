@@ -5,7 +5,7 @@ export default ({ image, altText, name, subtitle, episodeId, play }) => {
   const [isFlipped, setIsFlipped] = useState(false)
 
   return (
-    <div className="col-4">
+    <div className="col-4 episode-card">
       <ReactCardFlip isFlipped={isFlipped}>
         <img
           className="front-of-episode"
