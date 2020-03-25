@@ -78,28 +78,12 @@ export default () => (
       {JSON.stringify(schemaOrgJSONLD)}
     </script>
 
-    {/*
-            We don't want to include an empty RSS feed here, so only include these meta tags when
-            we have one.
-            We can totally ditch this check, once the RSS feed has been created .
-            This allows Google et al. to offer episode players in the search results
-        */}
-    {siteTitle ? (
-      <link
-        href={rssFeedUrl}
-        rel="alternate"
-        type="application/rss+xml"
-        title={siteTitle}
-      />
-    ) : null}
-    {siteTitle ? (
-      <link
-        href={rssFeedUrl}
-        rel="feed"
-        type="application/rss+xml"
-        title={siteTitle}
-      />
-    ) : null}
+    <link
+      href={rssFeedUrl}
+      rel="alternate"
+      type="application/rss+xml"
+      title={siteTitle}
+    />
     <link
       rel="stylesheet"
       href="https://cdn.podfonts.com/releases/v1.1.0/css/podfonts.css"
