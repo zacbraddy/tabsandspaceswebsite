@@ -19,12 +19,15 @@ let schemaOrgJSONLD = [
     publisher: {
       '@type': 'Organization',
       name: siteTitle,
-      logo: { imageUrl },
+      logo: {
+        '@type': 'ImageObject',
+        imageUrl,
+      },
     },
     url: siteUrl,
     image: {
       '@type': 'ImageObject',
-      url: { imageUrl },
+      url: imageUrl,
       width: 1200,
       height: 400,
     },
@@ -50,7 +53,6 @@ export default () => (
     {/* <meta
       http-equiv="Content-Security-Policy"
       content="default-src 'self' https://tabsandspaces.io; connect-src 'self' https://*.googleapis.com https://*.google-analytics.com https://*.podfonts.com https://*.gstatic.com; worker-src 'self' https://tabsandspaces.io; font-src 'self' data: https://*.gstatic.com https://*.podfonts.com https://*.googleapis.com; frame-src https://*.libsyn.com; style-src 'self' blob: https://*.podfonts.com https://*.googleapis.com 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' 'sha256-MtxTLcyxVEJFNLEIqbVTaqR4WWr0+lYSZ78AzGmNsuA=' 'sha256-LoSV/eO79zdTaQiBHoxSemK7YIw/zVPIGDsbpCcCD0o='; script-src 'self' 'sha256-aTEqOfuWzJyvuhhXN1/lt3hgXAovALZTLY327vs8upg=' 'sha256-KWO6UOhc/cfhZd4gtXYPu4WkSRPuCQDtCkF/v9OyJB8=' 'sha256-4l1SGUDtxRfk+A4o0nWdUWFoIgxd1ShQ/4W34rLW47s='; manifest-src 'self'; script-src-elem 'self' https://*.google-analytics.com;" /> */}
-
 
     {/* Open Graph stuff */}
     <meta property="og:site_name" content={siteTitle} />
