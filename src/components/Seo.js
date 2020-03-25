@@ -21,7 +21,7 @@ let schemaOrgJSONLD = [
       name: siteTitle,
       logo: {
         '@type': 'ImageObject',
-        imageUrl,
+        url: imageUrl,
       },
     },
     url: siteUrl,
