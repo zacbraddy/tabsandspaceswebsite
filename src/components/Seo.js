@@ -2,10 +2,10 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import logoUrl from '../assets/images/colour-logo.jpg'
 
-let siteTitle = 'tabs AND spaces'
+let siteTitle = 'Tabs and Spaces Podcast'
 let siteDescription =
   'A straight shooting podcast that talks about software development topics that developers care about'
-let siteUrl = 'http://tabsandspaces.io/'
+let siteUrl = 'https://tabsandspaces.io/'
 let twitterHandle = '@tabsnspacesHQ'
 
 // Note from Jamie: I don't like having to hard code this URL, but the structured data has
