@@ -1,5 +1,5 @@
 import React from 'react'
-import { HeadProvider, Title, Link, Meta } from 'react-head'
+import { Title, Link, Meta } from 'react-head'
 import logoUrl from '../assets/images/colour-logo.jpg'
 
 let siteTitle = 'Tabs and Spaces Podcast'
@@ -42,7 +42,7 @@ let schemaOrgJSONLD = [
 let rssFeedUrl = 'https://tabsandspaces.libsyn.com/rss'
 
 export default () => (
-  <HeadProvider>
+  <>
     <script type="application/ld+json">
       {JSON.stringify(schemaOrgJSONLD)}
     </script>
@@ -89,5 +89,5 @@ export default () => (
       integrity="sha384-JH5tKI4CUyK92X34BURCL05JcPhlKOfX7IlfBvkcRn75+/o6JU2PmnlKwOwsYfel"
       crossorigin="anonymous"
     />
-  </HeadProvider>
+  </>
 )
