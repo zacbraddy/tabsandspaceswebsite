@@ -1,6 +1,4 @@
 import React from 'react'
-import Episode from './Episode'
-import latest from '../config/latest-episodes'
 
 export default ({ siteDescription, siteTitle }) => (
   <section id="show-description" className="main style2">

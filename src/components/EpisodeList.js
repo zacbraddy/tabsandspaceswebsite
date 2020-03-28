@@ -1,4 +1,4 @@
-import React, { isFlipped } from 'react'
+import React from 'react'
 import Episode from './Episode'
 import latest from '../config/latest-episodes'
 import services from '../config/podcast-services'
@@ -17,8 +17,8 @@ export default () => {
           <Episode key={idx} {...ep} />
         ))}
         <div className="col-12" style={{ marginTop: '3rem' }}>
-          But also don't forget to check out the rest and subscribe to us on your favourite podcast
-          destination
+          But also don't forget to check out the rest and subscribe to us on
+          your favourite podcast destination
         </div>
         {services.map((sub, idx) => {
           return (

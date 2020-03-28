@@ -1,5 +1,5 @@
 import React from 'react'
-import Helmet from 'react-helmet'
+import { HeadProvider, Title, Link, Meta } from 'react-head'
 import logoUrl from '../assets/images/colour-logo.jpg'
 
 let siteTitle = 'Tabs and Spaces Podcast'
@@ -42,12 +42,16 @@ let schemaOrgJSONLD = [
 let rssFeedUrl = 'https://tabsandspaces.libsyn.com/rss'
 
 export default () => (
-  <Helmet>
-    <title> {siteTitle} </title>
-    <meta title={siteTitle} />
+  <HeadProvider>
+    <script type="application/ld+json">
+      {JSON.stringify(schemaOrgJSONLD)}
+    </script>
+
+    <Title>{siteTitle}</Title>
+    <Meta title={siteTitle} />
 
     {/* Tells Google et al. to index the site*/}
-    <meta name="ROBOTS" content="INDEX, FOLLOW" />
+    <Meta name="ROBOTS" content="INDEX, FOLLOW" />
 
     {/* testing ground for CSP */}
     {/* <meta
@@ -55,40 +59,35 @@ export default () => (
       content="default-src 'self' https://tabsandspaces.io; connect-src 'self' https://*.googleapis.com https://*.google-analytics.com https://*.podfonts.com https://*.gstatic.com; worker-src 'self' https://tabsandspaces.io; font-src 'self' data: https://*.gstatic.com https://*.podfonts.com https://*.googleapis.com; frame-src https://*.libsyn.com; style-src 'self' blob: https://*.podfonts.com https://*.googleapis.com 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' 'sha256-MtxTLcyxVEJFNLEIqbVTaqR4WWr0+lYSZ78AzGmNsuA=' 'sha256-LoSV/eO79zdTaQiBHoxSemK7YIw/zVPIGDsbpCcCD0o='; script-src 'self' 'sha256-aTEqOfuWzJyvuhhXN1/lt3hgXAovALZTLY327vs8upg=' 'sha256-KWO6UOhc/cfhZd4gtXYPu4WkSRPuCQDtCkF/v9OyJB8=' 'sha256-4l1SGUDtxRfk+A4o0nWdUWFoIgxd1ShQ/4W34rLW47s='; manifest-src 'self'; script-src-elem 'self' https://*.google-analytics.com;" /> */}
 
     {/* Open Graph stuff */}
-    <meta property="og:site_name" content={siteTitle} />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content={siteTitle} />
-    <meta property="og:description" content={siteDescription} />
-    <meta property="og:url" content={siteUrl} />
-    <meta property="og:image" content={imageUrl} />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="400" />
+    <Meta property="og:site_name" content={siteTitle} />
+    <Meta property="og:type" content="website" />
+    <Meta property="og:title" content={siteTitle} />
+    <Meta property="og:description" content={siteDescription} />
+    <Meta property="og:url" content={siteUrl} />
+    <Meta property="og:image" content={imageUrl} />
+    <Meta property="og:image:width" content="1200" />
+    <Meta property="og:image:height" content="400" />
 
     {/* Twitter specific Open Graph stuff */}
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={siteTitle} />
-    <meta name="twitter:description" content={siteDescription} />
-    <meta name="twitter:url" content={siteUrl} />
-    <meta name="twitter:image" content={imageUrl} />
-    <meta name="twitter:site" content={twitterHandle} />
-    <meta name="twitter:creator" content={twitterHandle} />
+    <Meta name="twitter:card" content="summary_large_image" />
+    <Meta name="twitter:title" content={siteTitle} />
+    <Meta name="twitter:description" content={siteDescription} />
+    <Meta name="twitter:url" content={siteUrl} />
+    <Meta name="twitter:image" content={imageUrl} />
+    <Meta name="twitter:site" content={twitterHandle} />
+    <Meta name="twitter:creator" content={twitterHandle} />
 
-    {/* Linked Data - for in results cards */}
-    <script type="application/ld+json">
-      {JSON.stringify(schemaOrgJSONLD)}
-    </script>
-
-    <link
+    <Link
       href={rssFeedUrl}
       rel="alternate"
       type="application/rss+xml"
       title={siteTitle}
     />
-    <link
+    <Link
       rel="stylesheet"
       href="https://cdn.podfonts.com/releases/v1.1.0/css/podfonts.css"
       integrity="sha384-JH5tKI4CUyK92X34BURCL05JcPhlKOfX7IlfBvkcRn75+/o6JU2PmnlKwOwsYfel"
       crossorigin="anonymous"
     />
-  </Helmet>
+  </HeadProvider>
 )
