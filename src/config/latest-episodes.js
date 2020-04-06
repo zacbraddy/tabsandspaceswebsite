@@ -1,17 +1,18 @@
-import ep1 from '../assets/images/ep001.jpg'
+//import ep1 from '../assets/images/ep001.jpg'
 import ep2 from '../assets/images/ep002.jpg'
 import ep3 from '../assets/images/ep003.jpg'
+import ep4 from '../assets/images/ep004.jpg'
 
 // We should totally read these from config, when in production
 export default [
-  {
+  ,
+  /*{
     name: 'Should I learn ALL the latest tech?',
     subtitle: `Because for real....there's so much of it.`,
     image: ep1,
     altText: 'Album artwork for episode 1',
     episodeId: '13022324',
-  },
-  {
+  }*/ {
     name: 'Toxic Workplaces',
     subtitle: 'Should I stay or should I go?',
     image: ep2,
@@ -24,5 +25,12 @@ export default [
     image: ep3,
     altText: 'Album atrwork for episode 3',
     episodeId: '13238294',
+  },
+  {
+    name: 'Dealing with Imposter Syndrome',
+    subtitle: `A topic we're barely qualified to cover`,
+    image: ep4,
+    altText: 'Album atrwork for episode 4',
+    episodeId: '13594871',
   },
 ]
