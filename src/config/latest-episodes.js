@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-//import ep3 from '../assets/images/ep003.jpg'
-=======
->>>>>>> 562dbd1e4569f0e4f6cbf06eba39d34416ce3215
 import ep4 from '../assets/images/ep004.jpg'
 import ep5 from '../assets/images/ep005.jpg'
 import ep6 from '../assets/images/ep006.jpg'
@@ -29,5 +25,5 @@ export default [
     image: ep6,
     altText: 'Episode 6 is all about learning and how we go about it',
     episodeId: '14462672',
-  }
+  },
 ]
