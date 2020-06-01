@@ -1,17 +1,13 @@
+<<<<<<< HEAD
 //import ep3 from '../assets/images/ep003.jpg'
+=======
+>>>>>>> 562dbd1e4569f0e4f6cbf06eba39d34416ce3215
 import ep4 from '../assets/images/ep004.jpg'
 import ep5 from '../assets/images/ep005.jpg'
 import ep6 from '../assets/images/ep006.jpg'
 
 // We should totally read these from config, when in production
 export default [
-  /*{
-    name: 'Dealing with Burnout',
-    subtitle: 'Gotta go fast! But gotta stay alive too!',
-    image: ep3,
-    altText: 'Episode 3 covers the topic of burnout',
-    episodeId: '13238294',
-  },*/
   {
     name: 'Dealing with Imposter Syndrome',
     subtitle: `A topic we're barely qualified to cover`,
@@ -33,5 +29,5 @@ export default [
     image: ep6,
     altText: 'Episode 6 is all about learning and how we go about it',
     episodeId: '14462672',
-  },
+  }
 ]
