@@ -1,17 +1,9 @@
-import ep6 from '../assets/images/ep006.jpg'
 import ep7 from '../assets/images/ep007.jpg'
 import ep8 from '../assets/images/ep008.jpg'
-//import ep9 from '../assets/images/ep009.jpg'
+import ep9 from '../assets/images/ep009.jpg'
 
 // We should totally read these from config, when in production
 export default [
-  {
-    name: 'Learning...how do?',
-    subtitle: `Sometimes it feels like barely at all`,
-    image: ep6,
-    altText: 'Episode 6 is all about learning and how we go about it',
-    episodeId: '14462672',
-  },
   {
     name: 'Bringing your best interview game',
     subtitle: `First impressions last...trust us`,
@@ -27,12 +19,12 @@ export default [
       'Episode 8 is about lies that every developer tells and it was recorded live!',
     episodeId: '15245345',
   },
-  /*{
+  {
     name: 'How to stop reinventing the world',
     subtitle: `There's nothing new under the sun so stop trying to make new thigns!`,
     image: ep9,
     altText:
       'Episode 9 is about how to feel alright about see bad code in your codebase',
     episodeId: '15695264',
-  },*/
+  },
 ]
