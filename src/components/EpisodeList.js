@@ -52,10 +52,9 @@ export default () => {
           </header>
           <p>Check out our latest episodes</p>
         </div>
-        {data.map((ep, idx) => {
-          console.log(ep)
-          return <Episode key={idx} {...ep} />
-        })}
+        {data.map((ep, idx) => (
+          <Episode key={idx} {...ep} />
+        ))}
         <div className="col-12" style={{ marginTop: '3rem' }}>
           But also don't forget to check out the rest and subscribe to us on
           your favourite podcast destination
