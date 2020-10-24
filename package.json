@@ -12,6 +12,7 @@
     "gatsby-plugin-offline": "^3.2.7",
     "gatsby-plugin-react-head": "^1.1.0",
     "gatsby-plugin-sass": "^2.3.2",
+    "gatsby-source-contentful": "^3.0.3",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-card-flip": "^1.0.10",
