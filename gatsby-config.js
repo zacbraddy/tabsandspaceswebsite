@@ -26,5 +26,12 @@ module.exports = {
     },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: 'c66e3hl7pdvl',
+        accessToken: 'MA7FdVyrzOasTWOR4gJL-K86TYDVIFQOt-6wkMvQeL0',
+      },
+    },
   ],
 }
