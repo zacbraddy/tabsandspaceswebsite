@@ -1,7 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import Episode from './Episode'
-import services from '../config/podcast-services'
+import Episode from '../Episode'
+import services from '../../config/podcast-services'
 
 export default () => {
   const extractData = (ep) => ({

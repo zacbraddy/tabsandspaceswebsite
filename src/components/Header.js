@@ -1,28 +1,34 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import colourLogo from '../assets/images/colour-logo.svg'
 import headerLogo from '../assets/images/header-logo.svg'
 
 export default () => (
   <>
     <nav className="menu-nav">
-      <a href="#header" className="menu-nav__link">
+      <a href="/#header" className="menu-nav__link">
         <img src={headerLogo} alt="Tabs and Spaces podcast logo" />
       </a>
       <ul className="menu-nav__inner">
         <li className="menu-nav__item">
-          <a href="#show-description" className="menu-nav__link">
-            About the Show
-          </a>
+          <Link to="/#show-description" className="menu-nav__link">
+            About the show
+          </Link>
         </li>
         <li className="menu-nav__item">
-          <a href="#latest-episodes" className="menu-nav__link">
-            Latest Episodes
-          </a>
+          <Link to="/#latest-episodes" className="menu-nav__link">
+            Just the latest episodes
+          </Link>
         </li>
         <li className="menu-nav__item">
-          <a href="#hosts" className="menu-nav__link">
-            About Us
-          </a>
+          <Link to="/episodes" className="menu-nav__link">
+            All the episodes
+          </Link>
+        </li>
+        <li className="menu-nav__item">
+          <Link to="/#hosts" className="menu-nav__link">
+            About us
+          </Link>
         </li>
       </ul>
     </nav>

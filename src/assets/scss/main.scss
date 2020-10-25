@@ -1204,7 +1204,8 @@ button,
   }
 }
 
-#latest-episodes {
+#latest-episodes,
+.season {
   a {
     border-bottom-color: rgba(255, 255, 255, 0);
     cursor: pointer;
@@ -1248,6 +1249,14 @@ button,
   }
 }
 
+#got-here {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10rem 2rem;
+  text-align: center;
+}
+
 /* XXLarge */
 @include breakpoint(xxlarge) {
   #header {
@@ -1258,7 +1267,8 @@ button,
     }
   }
 
-  #latest-episodes {
+  #latest-episodes,
+  .season {
     .back-of-episode {
       height: 382px;
     }
@@ -1282,7 +1292,8 @@ button,
     @include padding(6em, 0, (0, 0, _size(element-margin), 0));
   }
 
-  #latest-episodes {
+  #latest-episodes,
+  .season {
     .back-of-episode {
       height: 340px;
     }
@@ -1360,7 +1371,8 @@ button,
     background-attachment: scroll;
   }
 
-  #latest-episodes {
+  #latest-episodes,
+  .season {
     .back-of-episode {
       height: 316px;
     }
@@ -1437,7 +1449,8 @@ button,
     }
   }
 
-  #latest-episodes {
+  #latest-episodes,
+  .season {
     .front-of-episode {
       width: 316px;
     }

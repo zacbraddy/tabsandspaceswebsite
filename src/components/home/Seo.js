@@ -1,6 +1,6 @@
 import React from 'react'
 import { Title, Link, Meta } from 'react-head'
-import logoUrl from '../assets/images/colour-logo.jpg'
+import logoUrl from '../../assets/images/colour-logo.jpg'
 
 let siteTitle = 'Tabs and Spaces Podcast'
 let siteDescription =

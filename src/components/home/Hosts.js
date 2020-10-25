@@ -1,6 +1,6 @@
 import React from 'react'
 import Host from './Host'
-import hosts from '../config/host-details'
+import hosts from '../../config/host-details'
 
 export default () => (
   <section id="hosts" className="main style2">
