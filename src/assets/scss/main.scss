@@ -214,10 +214,6 @@ pre {
   white-space: nowrap;
   z-index: 10;
 
-  @media (max-width: 480px) {
-    display: none;
-  }
-
   &__inner {
     display: flex;
     margin: 0;
@@ -1273,6 +1269,14 @@ button,
       height: 382px;
     }
   }
+
+  .menu-nav__mobile {
+    display: none;
+  }
+
+  .menu-nav__desktop {
+    display: flex;
+  }
 }
 /* XLarge */
 
@@ -1297,6 +1301,14 @@ button,
     .back-of-episode {
       height: 340px;
     }
+  }
+
+  .menu-nav__mobile {
+    display: none;
+  }
+
+  .menu-nav__desktop {
+    display: flex;
   }
 }
 
@@ -1376,6 +1388,14 @@ button,
     .back-of-episode {
       height: 316px;
     }
+  }
+
+  .menu-nav__mobile {
+    display: none;
+  }
+
+  .menu-nav__desktop {
+    display: flex;
   }
 }
 
@@ -1460,6 +1480,14 @@ button,
       width: 316px;
       margin: 0 auto;
     }
+  }
+
+  .menu-nav__mobile {
+    display: none;
+  }
+
+  .menu-nav__desktop {
+    display: flex;
   }
 }
 
@@ -1550,6 +1578,14 @@ button,
 
   #footer {
     @include padding(3em, 1.5em, (0, 0, _size(element-margin), 0));
+  }
+
+  .menu-nav__mobile {
+    display: none;
+  }
+
+  .menu-nav__desktop {
+    display: flex;
   }
 }
 
@@ -1645,6 +1681,45 @@ button,
       }
     }
   }
+
+  /* Menu Nav */
+  .menu-nav__mobile {
+    display: block;
+
+    .bm-burger-button {
+      position: fixed;
+      width: 1.5rem;
+      height: 1.5rem;
+      left: 1.5rem;
+      top: 1.5rem;
+    }
+
+    .bm-burger-bars {
+      background: _palette(fg);
+    }
+
+    .bm-menu {
+      background: _palette(bg);
+    }
+
+    .bm-cross {
+      background: _palette(fg);
+      width: 3rem;
+      height: 3rem;
+    }
+
+    .bm-menu-wrap {
+      top: 0;
+    }
+
+    .bm-item:focus {
+      outline: none;
+    }
+  }
+
+  .menu-nav__desktop {
+    display: none;
+  }
 }
 
 /* XXSmall */
@@ -1679,5 +1754,40 @@ button,
 
   #footer {
     @include padding(2em, 1em, (0, 0, _size(element-margin), 0));
+  }
+
+  /* Menu Nav */
+  .menu-nav__mobile {
+    display: block;
+
+    .bm-burger-button {
+      position: fixed;
+      width: 1.5rem;
+      height: 1.5rem;
+      left: 1.5rem;
+      top: 1.5rem;
+    }
+
+    .bm-burger-bars {
+      background: _palette(fg);
+    }
+
+    .bm-menu {
+      background: _palette(bg);
+    }
+
+    .bm-cross {
+      background: _palette(fg);
+      width: 3rem;
+      height: 3rem;
+    }
+
+    .bm-menu-wrap {
+      top: 0;
+    }
+
+    .bm-item:focus {
+      outline: none;
+    }
   }
 }
