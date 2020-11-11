@@ -1,3 +1,7 @@
+if (process.env.NODE_ENV === 'development') {
+  require('dotenv').config()
+}
+
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Starter - Photon',
@@ -16,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: 'c66e3hl7pdvl',
-        accessToken: 'MA7FdVyrzOasTWOR4gJL-K86TYDVIFQOt-6wkMvQeL0',
+        spaceId: process.env.GATSBY_CONTENTFUL_SPACE_ID,
+        accessToken: process.env.GATSBY_CONTENTFUL_API_KEY,
       },
     },
   ],

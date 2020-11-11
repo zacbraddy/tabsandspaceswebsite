@@ -8,4 +8,6 @@ yarn.lock
 /public
 .DS_Store
 
+.env
 .env.local
+.log/
