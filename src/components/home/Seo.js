@@ -84,7 +84,7 @@ export default ({ title, description, image, article }) => {
       </script>
 
       {/* Tells Google et al. to index the site*/}
-      <Meta name="ROBOTS" content="INDEX, FOLLOW" />
+      <meta name="ROBOTS" content="INDEX, FOLLOW" />
 
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />

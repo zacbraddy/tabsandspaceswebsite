@@ -11,7 +11,7 @@ export default () => (
   <Layout>
     <Seo />
 
-    <ShowDescription siteTitle={siteTitle} siteDescription={siteDescription} />
+    <ShowDescription />
 
     <LatestEpisodeList />
 
