@@ -7,15 +7,11 @@ import GotToTheBottom from '../components/home/GotToTheBottom'
 import ShowDescription from '../components/home/ShowDescription'
 import Hosts from '../components/home/Hosts'
 
-let siteTitle = 'tabs AND spaces'
-let siteDescription =
-  'A straight shooting podcast that talks about software development topics that developers care about'
-
 export default () => (
   <Layout>
-    <Seo siteTitle={siteTitle} siteDescription={siteDescription} />
+    <Seo />
 
-    <ShowDescription siteTitle={siteTitle} siteDescription={siteDescription} />
+    <ShowDescription />
 
     <LatestEpisodeList />
 
