@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Tabs and Spaces Podcast",
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^14.1.2",
     "@iconify/icons-simple-icons": "^1.1.0",
     "@iconify/react": "^1.1.3",
     "gatsby": "^2.27.4",
