@@ -43,6 +43,14 @@ export default () => {
               </li>
               <li className="menu-nav__item">
                 <a
+                  onClick={mobileNavigate('/community-content')}
+                  className="menu-nav__link"
+                >
+                  Community created content
+                </a>
+              </li>
+              <li className="menu-nav__item">
+                <a
                   onClick={mobileNavigate('/#hosts')}
                   className="menu-nav__link"
                 >
@@ -70,6 +78,11 @@ export default () => {
             <li className="menu-nav__item">
               <Link to="/episodes" className="menu-nav__link">
                 All the episodes
+              </Link>
+            </li>
+            <li className="menu-nav__item">
+              <Link to="/community-content" className="menu-nav__link">
+                Community created content
               </Link>
             </li>
             <li className="menu-nav__item">

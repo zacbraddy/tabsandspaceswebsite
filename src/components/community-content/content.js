@@ -14,7 +14,6 @@ const options = {
 export default ({ title, sentToUs, author, inResponseToEpisode, content }) => {
   return (
     <article className={styles.contentArticle}>
-      <hr />
       <header className={`major ${styles.contentHeader}`}>
         <h3>{title}</h3>
         <strong>By: {author}</strong>

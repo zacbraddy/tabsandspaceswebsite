@@ -1254,29 +1254,27 @@ button,
 }
 
 /* XXLarge */
-@include breakpoint(xxlarge) {
-  #header {
-    @include padding(6em, 0, (0, 0, _size(element-margin), 0));
+#header {
+  @include padding(6em, 0, (0, 0, _size(element-margin), 0));
 
-    .logo {
-      width: 38em;
-    }
+  .logo {
+    width: 38em;
   }
+}
 
-  #latest-episodes,
-  .season {
-    .back-of-episode {
-      height: 382px;
-    }
+#latest-episodes,
+.season {
+  .back-of-episode {
+    height: 382px;
   }
+}
 
-  .menu-nav__mobile {
-    display: none;
-  }
+.menu-nav__mobile {
+  display: none;
+}
 
-  .menu-nav__desktop {
-    display: flex;
-  }
+.menu-nav__desktop {
+  display: flex;
 }
 /* XLarge */
 
