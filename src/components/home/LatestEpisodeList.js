@@ -10,6 +10,7 @@ export default () => {
     image: ep.node.episodeArt.file.url,
     altText: ep.node.episodeArtAltText.episodeArtAltText,
     episodeId: ep.node.libsynId,
+    trailer: ep.node.episodeTrailer && ep.node.episodeTrailer.file.url,
   })
 
   const query = useStaticQuery(graphql`
@@ -34,6 +35,11 @@ export default () => {
             libsynId
             episodeArtAltText {
               episodeArtAltText
+            }
+            episodeTrailer {
+              file {
+                url
+              }
             }
           }
         }

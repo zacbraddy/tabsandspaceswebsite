@@ -13,8 +13,8 @@ export default () => {
         description="Check out our entire back catalogue of episodes"
       />
       <EpisodeHeader />
-      <Season1 />
       <Season2 />
+      <Season1 />
     </Layout>
   )
 }

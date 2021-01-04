@@ -880,15 +880,16 @@ button,
   display: inline-block;
   font-size: 0.9em;
   font-weight: _font(weight-bold);
-  height: 3.25em;
+  height: 2.25em;
   letter-spacing: 0.125em;
-  line-height: 2.75em;
-  padding: 0 2em;
+  line-height: 1.75em;
+  padding: 0 1em;
   text-align: center;
   text-decoration: none;
   text-indent: 0.125em;
   text-transform: uppercase;
   white-space: nowrap;
+  outline: none;
 
   &:hover {
     background-color: _palette(border-bg);
@@ -985,6 +986,10 @@ button,
   .button {
     box-shadow: inset 0 0 0 1px _palette(dark, border);
     color: _palette(dark, fg-bold) !important;
+
+    &:focus {
+      outline: none;
+    }
 
     &:hover {
       background-color: _palette(dark, border-bg);
@@ -1213,10 +1218,15 @@ button,
 
   .episode-card {
     cursor: pointer;
+    padding: 1rem;
+    display: grid;
+    gap: 1em;
   }
 
-  .react-card-flip {
-    margin-bottom: 20px;
+  .flippy-front,
+  .flippy-back {
+    padding: 0;
+    box-shadow: none;
   }
 
   .front-of-episode {
@@ -1225,7 +1235,7 @@ button,
 
   .back-of-episode {
     width: 100%;
-    height: 317px;
+    height: 100%;
     background-image: linear-gradient(45deg, #e6528c, #f7a018);
     display: flex;
     flex-direction: column;
@@ -1233,6 +1243,7 @@ button,
 
     .episode-rule {
       border-bottom-color: _palette(fg);
+      margin: 1em 0;
     }
 
     .content {
@@ -1242,6 +1253,28 @@ button,
     .player {
       display: flex;
     }
+  }
+
+  .trailer-container-enter,
+  .trailer-container-appear {
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .trailer-container-enter-active,
+  .trailer-container-appear-active {
+    max-height: 500px;
+    transition: all 700ms;
+  }
+
+  .trailer-container-exit {
+    max-height: 500px;
+    overflow: hidden;
+  }
+
+  .trailer-container-exit.trailer-container-exit-active {
+    max-height: 0;
+    transition: all 700ms;
   }
 }
 
@@ -1259,13 +1292,6 @@ button,
 
   .logo {
     width: 38em;
-  }
-}
-
-#latest-episodes,
-.season {
-  .back-of-episode {
-    height: 382px;
   }
 }
 
@@ -1292,13 +1318,6 @@ button,
 
   #header {
     @include padding(6em, 0, (0, 0, _size(element-margin), 0));
-  }
-
-  #latest-episodes,
-  .season {
-    .back-of-episode {
-      height: 340px;
-    }
   }
 
   .menu-nav__mobile {
@@ -1381,13 +1400,6 @@ button,
     background-attachment: scroll;
   }
 
-  #latest-episodes,
-  .season {
-    .back-of-episode {
-      height: 316px;
-    }
-  }
-
   .menu-nav__mobile {
     display: none;
   }
@@ -1467,19 +1479,6 @@ button,
     }
   }
 
-  #latest-episodes,
-  .season {
-    .front-of-episode {
-      width: 316px;
-    }
-
-    .back-of-episode {
-      height: 323px;
-      width: 316px;
-      margin: 0 auto;
-    }
-  }
-
   .menu-nav__mobile {
     display: none;
   }
@@ -1553,7 +1552,7 @@ button,
   button,
   .button {
     height: 3em;
-    line-height: 3em;
+    line-height: 2.5em;
   }
 
   /* Main */
