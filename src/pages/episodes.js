@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import EpisodeHeader from '../components/episodes/Header'
 import Season1 from '../components/episodes/Season1.js'
+import Season2 from '../components/episodes/Season2.js'
 import Seo from '../components/home/Seo'
 
 export default () => {
@@ -13,6 +14,7 @@ export default () => {
       />
       <EpisodeHeader />
       <Season1 />
+      <Season2 />
     </Layout>
   )
 }

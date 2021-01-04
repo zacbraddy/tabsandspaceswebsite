@@ -12,9 +12,9 @@ export default () => {
   })
 
   const query = useStaticQuery(graphql`
-    query allSeason1Episodes {
+    query allSeason2Episodes {
       allContentfulEpisode(
-        filter: { seasonNumber: { eq: 1 } }
+        filter: { seasonNumber: { eq: 2 } }
         sort: { fields: [episodeNumber] }
       ) {
         edges {
@@ -47,7 +47,7 @@ export default () => {
       <div className="grid-wrapper">
         <div className="col-12">
           <header className="major">
-            <h2>Season 1 - The Idea</h2>
+            <h2>Season 2 - The off by one error</h2>
           </header>
         </div>
         {data.map((ep, idx) => (
