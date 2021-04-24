@@ -27,10 +27,12 @@ export default () => {
           </header>
           <p>
             {siteName} is a podcast put together by three developers with over
-            30 years of collective experience in software development. We're
+            40 years of collective experience in software development. We're
             here to tell you what we really think about the difficult problems
             that face software developers throughout their career and we promise
-            that we won't always agree!
+            that we won't always agree! Every month we meet new people who come
+            on the show to share their experiences and make jokes at our
+            expense, so what's not to like?
           </p>
           <div className="trailer-container">
             <h3>Wanna hear a little more about it?</h3>
