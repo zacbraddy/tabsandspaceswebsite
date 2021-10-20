@@ -3,6 +3,7 @@ import { Link, navigate } from 'gatsby'
 import { slide as Menu } from 'react-burger-menu'
 import colourLogo from '../assets/images/colour-logo.svg'
 import headerLogo from '../assets/images/header-logo.svg'
+import Socials from './Socials'
 
 export default () => {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -100,6 +101,9 @@ export default () => {
             className="logo"
             alt="Tabs and spaces podcast. The truth is, you're always wrong"
           />
+          <div style={{marginTop: "4rem"}}>
+            <Socials />
+          </div>
         </div>
       </section>
     </>
