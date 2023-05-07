@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "dotenv": "^8.2.0",
-    "firebase-tools": "^8.16.2",
+    "firebase-tools": "^11.30.0",
     "prettier": "^2.2.1"
   },
   "repository": {
